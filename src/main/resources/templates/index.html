@@ -22,17 +22,35 @@
         .infoContainerSection{
             flex-direction: column;
         }
+        .infoCardOverLay3{
+            background-color: purple;
+            padding: 1em;
+            color: white;
+            width: 60%;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            opacity: 0.63;
+        }
 
+        .infoCardBody1{
+            background-image: url("/images/pastor_j_preaching.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 2px;
+            height: 35vh;
+            width: 100%;
+            border: 1px dashed lightgrey;
+        }
         .infoCardOverLay1{
             opacity: 0.6;
             background-color: purple;
             padding: .5em;
             color: white;
-            width: 95%;
-            height: 95%;
-            margin: .5em;
+            width: 90%;
             display: flex;
             flex-direction: row;
+            margin: 1em auto;
         }
         .infoSundayServiceTitle{
             color: white;
@@ -55,42 +73,6 @@
             color: black;
             margin: 0;
         }
-        .infoCardOverLay2{
-            opacity: 0.6;
-            background-color: purple;
-            padding: 1em;
-            color: white;
-            width: 100%;
-        }
-        .infoCardOverLay3{
-            background-color: purple;
-            padding: 1em;
-            color: white;
-            width: 60%;
-            margin-top: .5em;
-            margin-bottom: .5em;
-            opacity: 0.63;
-        }
-        .infoCardOverLay4{
-            opacity: 0.6;
-            background-color: purple;
-            padding: 1em;
-            color: white;
-            width: 95%;
-            height: 95%;
-            margin: .5em;
-
-        }
-        .infoCardBody1{
-            background-image: url("/images/pastor_j_preaching.jpeg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            margin: 2px;
-            height: 35vh;
-            width: 100%;
-            border: 1px dashed lightgrey;
-        }
         .infoCardBody2{
             background-image: url("/images/prayer_hands.jpeg");
             background-repeat: no-repeat;
@@ -105,10 +87,33 @@
             flex-direction: column;
             justify-content: space-between;
         }
+        .infoCardOverLay2{
+            opacity: 0.6;
+            background-color: purple;
+            padding: 1em;
+            margin: 1em auto;
+            color: white;
+            width: 90%;
+        }
         .infoPrayer{
             text-align: end;
             color: white;
             margin-right: .75em;
+            margin-top: .5em;
+
+        }
+        .infoPrayerContainer{
+            display: flex;
+            flex-direction: column;
+        }
+        .infoPrayerHeading{
+            color: black;
+            margin: 0;
+        }
+        .infoPrayerText{
+            color: white;
+            font-size: small;
+            margin: 0;
         }
         .infoCardBody3{
             display: flex;
@@ -119,7 +124,6 @@
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
-
         }
         .infoBlock{
             width: 35%;
@@ -140,6 +144,36 @@
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
+
+        }
+        .infoCardOverLay4{
+            opacity: 0.6;
+            background-color: purple;
+            padding: .5em;
+            color: white;
+            width: 90%;
+            height: 87%;
+            margin: 1em auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .infoBibleStudyTitle{
+            color: white;
+            width: 50%;
+        }
+        .infoBibleStudyContainer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4em;
+        }
+        .infoBibleStudyHeading{
+            margin: 0;
+            color: black;
+        }
+        .infoBibleStudyText{
+            margin: 0;
+            color: white;
+            font-size: small;
         }
 
 
@@ -231,8 +265,14 @@
             </div>
         </div>
         <div class="infoCardBody2">
-            <h3 class="infoPrayer">Prayer call</h3>
-            <div class="infoCardOverLay2"></div>
+            <h1 class="infoPrayer">Prayer call</h1>
+            <div class="infoCardOverLay2">
+                <div class="infoPrayerContainer">
+                    <h5 class="infoPrayerHeading">Monday & Thursday</h5>
+                    <p class="infoPrayerText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem.</p>
+                </div>
+
+            </div>
         </div>
     </div>
     <div class="infoContainerSection">
@@ -247,7 +287,15 @@
             <div class="infoBlock"></div>
         </div>
         <div class="infoCardBody4">
-            <div class="infoCardOverLay4">Bible Study</div>
+            <div class="infoCardOverLay4">
+                <h3 class="infoBibleStudyTitle">Bible Study</h3>
+                <div class="infoBibleStudyContainer">
+                    <h5 class="infoBibleStudyHeading">6:00 PM</h5>
+                    <p class="infoBibleStudyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h5 class="infoBibleStudyHeading">6:00 PM</h5>
+                    <p class="infoBibleStudyText">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
