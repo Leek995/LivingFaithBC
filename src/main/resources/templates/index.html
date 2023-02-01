@@ -11,7 +11,7 @@
 
         .carousel-item > img {
             object-fit:cover;
-            position: center;
+            object-position: center;
             height: 40vh;
         }
         .infoContainer{
@@ -22,11 +22,59 @@
         .infoContainerSection{
             flex-direction: column;
         }
-        .infoCardBody{
-            height: 20vh;
+
+        .infoCardOverLay{
+            opacity: 0.9;
+            background-color: purple;
+            padding: 1em;
+            color: white;
+        }
+        .infoCardBody1{
+            background-image: url("/images/pexels-monstera-5997362.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.7;
+            margin: 2px;
+            height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
         }
+        .infoCardBody2{
+            background-image: url("/images/church_logo.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.3;
+            margin: 2px;
+            height: 35vh;
+            width: 100%;
+            border: 1px dashed lightgrey;
+        }
+        .infoCardBody3{
+            background-image: url("/images/church_logo.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.3;
+            margin: 2px;
+            height: 35vh;
+            width: 100%;
+            border: 1px dashed lightgrey;
+        }
+        .infoCardBody4{
+            background-image: url("/images/church_logo.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.3;
+            margin: 2px;
+            height: 35vh;
+            width: 100%;
+            border: 1px dashed lightgrey;
+        }
+
+
     }
 
     /* Medium devices (tablets, 768px and up) */
@@ -98,12 +146,21 @@
 </div>
 <div class="infoContainer">
     <div class="infoContainerSection">
-        <div class="infoCardBody"></div>
-        <div class="infoCardBody"></div>
+        <div class="infoCardBody1">
+            <div class="infoCardOverLay">Join Sunday Service</div>
+            <div style="color: grey">@9am</div>
+        </div>
+        <div class="infoCardBody2">
+            <div class="infoCardOverLay">Prayer Call</div>
+        </div>
     </div>
     <div class="infoContainerSection">
-        <div class="infoCardBody"></div>
-        <div class="infoCardBody"></div>
+        <div class="infoCardBody3">
+            <div class="infoCardOverLay">Watch Us</div>
+        </div>
+        <div class="infoCardBody4">
+            <div class="infoCardOverLay">Bible Study</div>
+        </div>
     </div>
 </div>
 <div th:replace="fragments :: footer"></div>
