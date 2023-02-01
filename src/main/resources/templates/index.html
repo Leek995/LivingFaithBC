@@ -26,19 +26,41 @@
         .infoCardOverLay1{
             opacity: 0.6;
             background-color: purple;
-            padding: 1em;
+            padding: .5em;
             color: white;
             width: 95%;
             height: 95%;
             margin: .5em;
+            display: flex;
+            flex-direction: row;
+        }
+        .infoSundayServiceTitle{
+            color: white;
+            width: 60%;
+        }
+        .infoSundayServiceText{
+            margin-top: 4em;
+        }
+        .infoSundayServiceTextContainer{
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .infoSundayServiceTextContainer > p{
+            margin: 0;
+            font-size: small;
+        }
 
+        .infoSundayServiceHeader{
+            color: black;
+            margin: 0;
         }
         .infoCardOverLay2{
             opacity: 0.6;
             background-color: purple;
             padding: 1em;
             color: white;
-            width: 50%;
+            width: 100%;
         }
         .infoCardOverLay3{
             background-color: purple;
@@ -68,7 +90,6 @@
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
-
         }
         .infoCardBody2{
             background-image: url("/images/prayer_hands.jpeg");
@@ -80,7 +101,14 @@
             width: 100%;
             border: 1px dashed lightgrey;
             display: flex;
-            justify-content: flex-end;
+            /*justify-content: flex-end;*/
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .infoPrayer{
+            text-align: end;
+            color: white;
+            margin-right: .75em;
         }
         .infoCardBody3{
             display: flex;
@@ -187,11 +215,24 @@
 <div class="infoContainer">
     <div class="infoContainerSection">
         <div class="infoCardBody1">
-            <div class="infoCardOverLay1">Join Sunday Service</div>
-            <div style="color: grey">@9am</div>
+            <div class="infoCardOverLay1">
+                <div class="infoSundayServiceTitle"><h3>Sunday Experience</h3></div>
+                <div class="infoSundayServiceText">
+                    <div class="infoSundayServiceTextContainer">
+                        <h5 class="infoSundayServiceHeader">9:00 AM</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="infoSundayServiceTextContainer">
+                        <h5 class="infoSundayServiceHeader">Address</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <div class="infoCardBody2">
-            <div class="infoCardOverLay2">Prayer Call</div>
+            <h3 class="infoPrayer">Prayer call</h3>
+            <div class="infoCardOverLay2"></div>
         </div>
     </div>
     <div class="infoContainerSection">
