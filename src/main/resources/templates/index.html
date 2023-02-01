@@ -23,51 +23,91 @@
             flex-direction: column;
         }
 
-        .infoCardOverLay{
-            opacity: 0.9;
+        .infoCardOverLay1{
+            opacity: 0.6;
             background-color: purple;
             padding: 1em;
             color: white;
+            width: 95%;
+            height: 95%;
+            margin: .5em;
+
+        }
+        .infoCardOverLay2{
+            opacity: 0.6;
+            background-color: purple;
+            padding: 1em;
+            color: white;
+            width: 50%;
+        }
+        .infoCardOverLay3{
+            background-color: purple;
+            padding: 1em;
+            color: white;
+            width: 60%;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            opacity: 0.63;
+        }
+        .infoCardOverLay4{
+            opacity: 0.6;
+            background-color: purple;
+            padding: 1em;
+            color: white;
+            width: 95%;
+            height: 95%;
+            margin: .5em;
+
         }
         .infoCardBody1{
-            background-image: url("/images/pexels-monstera-5997362.jpg");
+            background-image: url("/images/pastor_j_preaching.jpeg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            opacity: 0.7;
             margin: 2px;
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
+
         }
         .infoCardBody2{
-            background-image: url("/images/church_logo.jpg");
+            background-image: url("/images/prayer_hands.jpeg");
             background-repeat: no-repeat;
-            background-position: center;
+            /*background-position: center;*/
             background-size: cover;
-            opacity: 0.3;
             margin: 2px;
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
+            display: flex;
+            justify-content: flex-end;
         }
         .infoCardBody3{
-            background-image: url("/images/church_logo.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            opacity: 0.3;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: darkgray;
             margin: 2px;
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
+
         }
-        .infoCardBody4{
-            background-image: url("/images/church_logo.jpg");
+        .infoBlock{
+            width: 35%;
+            background-image: url("/images/preaching.jpeg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            opacity: 0.3;
+            margin-top: .5em;
+            margin-bottom: .5em;
+
+        }
+        .infoCardBody4{
+            background-image: url("/images/pullpit.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             margin: 2px;
             height: 35vh;
             width: 100%;
@@ -147,19 +187,26 @@
 <div class="infoContainer">
     <div class="infoContainerSection">
         <div class="infoCardBody1">
-            <div class="infoCardOverLay">Join Sunday Service</div>
+            <div class="infoCardOverLay1">Join Sunday Service</div>
             <div style="color: grey">@9am</div>
         </div>
         <div class="infoCardBody2">
-            <div class="infoCardOverLay">Prayer Call</div>
+            <div class="infoCardOverLay2">Prayer Call</div>
         </div>
     </div>
     <div class="infoContainerSection">
         <div class="infoCardBody3">
-            <div class="infoCardOverLay">Watch Us</div>
+            <div class="infoCardOverLay3">Watch Us
+                Lorem ipsum
+                dolor sit amet
+                , consectetur
+                adipisicing elit.
+                A facilis impedit
+            </div>
+            <div class="infoBlock"></div>
         </div>
         <div class="infoCardBody4">
-            <div class="infoCardOverLay">Bible Study</div>
+            <div class="infoCardOverLay4">Bible Study</div>
         </div>
     </div>
 </div>
