@@ -10,7 +10,15 @@
     <link th:href="@{/css/fragment.css}" rel="stylesheet">
     <style>
         .navbar{
-            background-color: purple;
+            background: hsla(0, 0%, 100%, 1);
+
+            background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
         }
     </style>
 </head>

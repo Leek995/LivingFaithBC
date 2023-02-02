@@ -33,8 +33,7 @@
             border: 1px dashed lightgrey;
         }
         .infoCardOverLay1{
-            opacity: 0.6;
-            background-color: purple;
+            background-color: hsla(287, 55%, 50%, 0.6 );
             padding: .5em;
             color: white;
             width: 90%;
@@ -78,8 +77,8 @@
             justify-content: space-between;
         }
         .infoCardOverLay2{
-            opacity: 0.6;
-            background-color: purple;
+            /*opacity: 0.6;*/
+            background-color: hsla(287, 55%, 50%, 0.6 );
             padding: 1em;
             margin: 1em auto;
             color: white;
@@ -109,20 +108,27 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            background-color: darkgray;
+            background-color: #373737;
             /*margin: 2px;*/
             height: 35vh;
             width: 100%;
             border: 1px dashed lightgrey;
         }
         .infoCardOverLay3{
-            background-color: purple;
+            background: hsla(0, 0%, 100%, 1);
+
+            background: linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            background: -moz-linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            background: -webkit-linear-gradient(315deg, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
             padding: 1em;
             color: white;
             width: 100%;
             margin-top: .5em;
             margin-bottom: .5em;
-            opacity: 0.63;
         }
         .infoBlock{
             width: 80%;
@@ -146,8 +152,7 @@
 
         }
         .infoCardOverLay4{
-            opacity: 0.6;
-            background-color: purple;
+            background-color: hsla(287, 55%, 50%, 0.6 );
             padding: .5em;
             color: white;
             width: 90%;
@@ -182,12 +187,21 @@
             margin-bottom: 1em;
         }
         .welcomeBanner{
+            /*opacity: .9;*/
             text-align: center;
             padding: 1em;
             border: 1px dashed lightgrey;
             width: 100%;
             color: white;
-            background-color: purple;
+            background: hsla(0, 0%, 95%, 1);
+
+            background: radial-gradient(circle, hsla(0, 0%, 95%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            background: -moz-radial-gradient(circle, hsla(0, 0%, 95%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            background: -webkit-radial-gradient(circle, hsla(0, 0%, 95%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F3F3F3", endColorstr="#A639C4", GradientType=1 );
         }
         .welcomeImgContainer{
             display: flex;
