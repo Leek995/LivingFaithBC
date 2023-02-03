@@ -18,11 +18,11 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model){
-        model.addAttribute("email", new EmailSubscription());
+        model.addAttribute("emailSub", new EmailSubscription());
         return "index";
     }
-    @PostMapping("/")
-    public String RegisterUserForm(@ModelAttribute("email") EmailSubscription email){
+    @PostMapping("/success")
+    public String RegisterUserForm(@ModelAttribute("emailSub") EmailSubscription email){
         emailDoa.save(email);
         return "success";
     }
