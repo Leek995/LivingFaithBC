@@ -9,17 +9,127 @@
     <title th:text="${LFBC}"></title>
     <link th:href="@{/css/fragment.css}" rel="stylesheet">
     <style>
-        .navbar{
-            background: hsla(0, 0%, 100%, 1);
+        /* Small devices (phones and pocket devices, 576 and up) */
+        @media screen and (min-width:300px) {
+            .footerBody{
+                background-color: hsla(287, 55%, 50%, 1);
+                width: 100%;
+            }
+            .footerRow{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                /*align-items: center;*/
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+            }
+            .footerHeading{
+                display: flex;
+                flex-direction: column;
+                margin-top: 2em;
+            }
+            .navbar{
+                background: hsla(0, 0%, 100%, 1);
 
-            background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+                background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
 
-            background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+                background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
 
-            background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+                background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
 
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
+                filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
+            }
         }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media screen and (min-width:768px) {
+
+            .footerRow{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footerHeading{
+                display: flex;
+                flex-direction: column;
+            }
+            .navbar{
+                background: hsla(0, 0%, 100%, 1);
+
+                background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
+            }
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media screen and (min-width:992px) {
+            .footerRow{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footerHeading{
+                display: flex;
+                flex-direction: column;
+            }
+            .navbar{
+                background: hsla(0, 0%, 100%, 1);
+
+                background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
+            }
+        }
+
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media screen and (min-width:1200px) {
+            .footerRow{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .footerHeading{
+                display: flex;
+                flex-direction: column;
+            }
+            .navbar{
+                background: hsla(0, 0%, 100%, 1);
+
+                background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(287, 55%, 50%, 1) 100%);
+
+                filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
+            }
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -76,7 +186,33 @@
 
     </div>
     <div th:fragment="footer">
-        <p>footer</p>
+        <div class="footerBody">
+            <div class="footerRow">
+                <div class="footerHeading">
+                    <h6>Location</h6>
+                    <div>Lorem ipsum dolor sit amet, consectetur.</div>
+                    <div>Lorem ipsum dolor </div>
+                    <div>Lorem ipsum dolor</div>
+                    <div>Lorem ipsum dolor sit amet,</div>
+                </div>
+                <div class="footerHeading">
+                    <h6>Quick Links</h6>
+                    <div>Lorem.</div>
+                    <div>Lorem.</div>
+                    <div>Lorem ipsum.</div>
+                    <div>Lorem.</div>
+                    <div>Lorem ipsum.</div>
+                </div>
+                <div class="footerHeading">
+                    <h6>Title</h6>
+                    <div>Lorem ipsum</div>
+                    <div>Lorem ipsum dolor </div>
+                    <div>Lorem </div>
+                    <div>Lorem ipsum dolor</div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
