@@ -24,7 +24,15 @@
                 margin-left: auto;
                 margin-right: auto;
                 color: white;
+
             }
+            a:link { text-decoration: none;}
+            a{
+                color: white;
+            }
+            a:visited { text-decoration: black; }
+            a:hover { text-decoration: black; }
+            a:active { text-decoration: none; }
             .footerHeading{
                 display: flex;
                 flex-direction: column;
@@ -41,6 +49,8 @@
 
                 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#A639C4", GradientType=1 );
             }
+
+
         }
 
         /* Medium devices (tablets, 768px and up) */
@@ -55,6 +65,7 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .footerHeading{
                 display: flex;
                 flex-direction: column;
@@ -190,25 +201,25 @@
             <div class="footerRow">
                 <div class="footerHeading">
                     <h6>Location</h6>
-                    <div>Lorem ipsum dolor sit amet, consectetur.</div>
-                    <div>Lorem ipsum dolor </div>
-                    <div>Lorem ipsum dolor</div>
-                    <div>Lorem ipsum dolor sit amet,</div>
+                    <a th:href="@{#}">Lorem ipsum dolor sit amet, consectetur.</a>
+                    <a th:href="@{#}">Lorem ipsum dolor </a>
+                    <a th:href="@{#}">Lorem ipsum dolor</a>
+                    <a th:href="@{#}">Lorem ipsum dolor sit amet,</a>
                 </div>
                 <div class="footerHeading">
                     <h6>Quick Links</h6>
-                    <div>Lorem.</div>
-                    <div>Lorem.</div>
-                    <div>Lorem ipsum.</div>
-                    <div>Lorem.</div>
-                    <div>Lorem ipsum.</div>
+                    <a th:href="@{#}">Lorem.</a>
+                    <a th:href="@{#}">Lorem.</a>
+                    <a th:href="@{#}">Lorem ipsum.</a>
+                    <a th:href="@{#}">Lorem.</a>
+                    <a th:href="@{#}">Lorem ipsum.</a>
                 </div>
                 <div class="footerHeading">
                     <h6>Title</h6>
-                    <div>Lorem ipsum</div>
-                    <div>Lorem ipsum dolor </div>
-                    <div>Lorem </div>
-                    <div>Lorem ipsum dolor</div>
+                    <a th:href="@{#}">Lorem ipsum</a>
+                    <a th:href="@{#}">Lorem ipsum dolor </a>
+                    <a th:href="@{#}">Lorem </a>
+                    <a th:href="@{#}">Lorem ipsum dolor</a>
                 </div>
             </div>
         </div>
