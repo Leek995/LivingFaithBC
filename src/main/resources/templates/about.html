@@ -5,10 +5,8 @@
 <div th:replace="fragments :: navbar"></div>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-<!--        <li class="breadcrumb-item"><a href="#">Pastor Johnson</a></li>-->
         <li class="breadcrumb-item active" aria-current="page">Pastor Johnson</li>
         <li class="breadcrumb-item active" aria-current="page">First Lady</li>
-<!--        <li class="breadcrumb-item"><a href="#">First Lady</a></li>-->
         <li class="breadcrumb-item active" aria-current="page">Family</li>
         <li class="breadcrumb-item active" aria-current="page">Message</li>
         <li class="breadcrumb-item active" aria-current="page">Book Recommendations</li>
@@ -17,6 +15,7 @@
 
 <h1>About Page</h1>
 
+<script th:src="@{/js/about.js}"></script>
 <div th:replace="fragments :: footer"></div>
 <div th:replace="fragments :: scripts"></div>
 </body>
