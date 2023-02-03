@@ -19,10 +19,22 @@ public class EmailSubscription {
     @Column(nullable = false, unique = true, length = 100)
     private String email;
 
-    @Column(nullable = false, length = 15)
-    private long phone_number;
+
 
     public EmailSubscription() {
+    }
+
+    public EmailSubscription(long id, String firstname, String lastname, String email) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+    }
+
+    public EmailSubscription(String firstname, String lastname, String email) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
     }
 
     public long getId() {
@@ -56,21 +68,4 @@ public class EmailSubscription {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public long getPhone_number() {
-        return phone_number;
-    }
-
-    public void setPhone_number(long phone_number) {
-        this.phone_number = phone_number;
-    }
-
-    public EmailSubscription(long id, String firstname, String lastname, String email, long phone_number) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.phone_number = phone_number;
-    }
-
 }

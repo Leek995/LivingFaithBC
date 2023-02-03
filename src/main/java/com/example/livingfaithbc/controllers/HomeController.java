@@ -10,6 +10,7 @@ public class HomeController {
     public String home(){
         return "index";
     }
+
     @GetMapping("/sunday/experience")
     public String sundayExperience(){
         return "sunday-experience";
