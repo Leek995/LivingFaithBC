@@ -5,7 +5,7 @@
 <div th:replace="fragments :: navbar"></div>
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Pastor Johnson</li>
+        <li class="breadcrumb-item active" id="pastorTab" aria-current="page">Pastor Johnson</li>
         <li class="breadcrumb-item active" aria-current="page">First Lady</li>
         <li class="breadcrumb-item active" aria-current="page">Family</li>
         <li class="breadcrumb-item active" aria-current="page">Message</li>
@@ -14,9 +14,11 @@
 </nav>
 
 <h1>About Page</h1>
+<div class="aboutContainer"></div>
 
-<script th:src="@{/js/about.js}"></script>
+
 <div th:replace="fragments :: footer"></div>
 <div th:replace="fragments :: scripts"></div>
+<script th:src="@{/js/about.js}"></script>
 </body>
 </html>
