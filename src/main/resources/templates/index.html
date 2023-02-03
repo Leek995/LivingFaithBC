@@ -357,25 +357,23 @@
 <div class="welcome">
     <div class="welcomeBanner">
         <h1 class="welcomeMessage">Welcom to LFBC</h1>
-        <form class="emailForm">
+        <form th:action="@{/}" th:method="post" th:object="${email}"class="emailForm">
             <h5 class="emailFormHeader">Subscribe to our newsletter!</h5>
             <div class="emailFormContainer1">
                 <div class="emailInputContainer">
 <!--                    <label>First Name</label>-->
-                    <input class="emailInputFirstName" placeholder="First Name"/>
+                    <input th:field="*{firstname}" class="emailInputFirstName" placeholder="First Name"/>
                 </div>
                 <div class="emailInputContainer">
 <!--                    <label>Last Name</label>-->
-                    <input class="emailInputLastName" placeholder="Last Name"/>
+                    <input th:field="*{lastname}" class="emailInputLastName" placeholder="Last Name"/>
                 </div>
             </div>
             <div class="emailInputContainer2">
 <!--                <label>Email</label>-->
-                <input class="emailInput" placeholder="Email"/>
+                <input th:field="*{email}" class="emailInput" placeholder="Email"/>
             </div>
-            <button class="emailFormBtn">Subscribe</button>
-
-
+            <button type="submit" class="emailFormBtn">Subscribe</button>
         </form>
     </div>
     <div class="welcomeImgContainer">
