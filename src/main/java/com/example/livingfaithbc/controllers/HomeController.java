@@ -1,8 +1,12 @@
 package com.example.livingfaithbc.controllers;
 
 import com.example.livingfaithbc.Repositories.EmailSubscriptionRepo;
+import com.example.livingfaithbc.models.EmailSubscription;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class HomeController {
@@ -13,8 +17,14 @@ public class HomeController {
     }
 
     @GetMapping("/")
-    public String home(){
+    public String home(Model model){
+        model.addAttribute("email", new EmailSubscription());
         return "index";
+    }
+    @PostMapping("/")
+    public String RegisterUserForm(@ModelAttribute("email") EmailSubscription email){
+        emailDoa.save(email);
+        return "success";
     }
 
     @GetMapping("/sunday/experience")
