@@ -218,10 +218,25 @@
             object-fit: cover;
             object-position: top;
         }
+        .welcomeTextBody{
+            margin-top: 3em;
+        }
+
+        .first-letter{
+            font-size: 5rem;
+            line-height: 80%;
+            float: left;
+            margin-right: .25em;
+        }
+
         .welcomeTextContainer{
-            width: 80%;
+            width: 85%;
             margin-right: auto;
             margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1.5em;
         }
         .emailForm{
             display: flex;
@@ -403,7 +418,14 @@
     <div class="welcomeImgContainer">
         <img class="welcomeImg" th:src="@{images/paster_firstlady.jpg}"/>
     </div>
-    <div class="welcomeTextContainer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aperiam architecto asperiores consequatur culpa cum deserunt earum eos error eveniet facere fuga fugiat id impedit incidunt inventore ipsa itaque maiores modi molestias natus neque nisi non officia pariatur possimus quibusdam quos reiciendis sed sequi suscipit tempora tempore temporibus, voluptatum!</div>
+    <div class="welcomeTextContainer">
+        <div class="welcomeTextIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="lightgrey" class="bi bi-quote" viewBox="0 0 16 16">
+                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+            </svg>
+        </div>
+        <p class="welcomeTextBody"><span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aperiam architecto asperiores consequatur culpa cum deserunt earum eos error eveniet facere fuga fugiat id impedit incidunt inventore ipsa itaque maiores modi molestias natus neque nisi non officia pariatur possimus quibusdam quos reiciendis sed sequi suscipit tempora tempore temporibus, voluptatum!</p>
+    </div>
 
 </div>
 <div class="infoContainer">
