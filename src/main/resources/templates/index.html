@@ -183,6 +183,12 @@
         }
         .welcomeMessage{
             margin-bottom: 1em;
+            font-family: 'Darker Grotesque', sans-serif;
+            max-width: 300px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 2rem;
+            font-weight: 400;
         }
         .welcomeBanner{
             /*opacity: .9;*/
@@ -228,9 +234,16 @@
             flex-direction: row;
             justify-content: space-evenly;
         }
-        .emailFormHeader{
+        .emailHeader{
             text-align: left;
-            font-size: medium;
+            color: hsla(287, 55%, 50%, 1 );
+            margin-bottom: .75em;
+        }
+        .emailFormHeader{
+            text-align: right;
+            color: hsla(287, 55%, 50%, 1 );
+            margin-top: .75em;
+            font-size: small;
         }
         .emailInputContainer{
             display: flex;
@@ -353,9 +366,9 @@
 </div>
 <div class="welcome">
     <div class="welcomeBanner">
-        <h1 class="welcomeMessage">Welcom to LFBC</h1>
+        <h1 class="welcomeMessage"><span style="font-weight: 800">Welcome to</span> Living Faith Bible Church</h1>
         <form th:action="@{/success}" th:method="post" th:object="${emailSub}"class="emailForm">
-            <h5 class="emailFormHeader">Subscribe to our newsletter!</h5>
+            <h5 class="emailHeader">Monthly Newsletter</h5>
             <div class="emailFormContainer1">
                 <div class="emailInputContainer">
 <!--                    <label>First Name</label>-->
@@ -371,6 +384,7 @@
                 <input th:field="*{email}" class="emailInput" placeholder="Email"/>
             </div>
             <button type="submit" class="emailFormBtn">Subscribe</button>
+            <h5 class="emailFormHeader">Join our email list for updates &#128519;</h5>
         </form>
     </div>
     <div class="welcomeImgContainer">
