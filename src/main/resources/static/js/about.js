@@ -42,4 +42,6 @@
     $('#firstLadyTab').click( function (e){
         $('.aboutContainer').html(renderAboutFirstLadyHTML);
     });
+
+
 })();

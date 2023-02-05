@@ -189,6 +189,7 @@
             margin-left: auto;
             font-size: 2rem;
             font-weight: 500;
+            text-transform: uppercase;
         }
         .welcomeBanner{
             /*opacity: .9;*/
@@ -211,35 +212,45 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .welcomeHeaderTextBody{
 
         }
         .welcomeHeaderText{
             display: flex;
-            flex-direction: row;
             justify-content: end;
             transition: transform 1s;
-            animation: slideMe .7s ease-in;
-            border: 1px solid black;
-            padding: 3em;
-            transform: skewX(14deg);
+            /*animation: slideMe 2s ease-in;*/
+            border: none ;
+            -moz-border-radius-topright: 2px;
+            -moz-border-radius-bottomright: 2px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            padding: 1em;
+            width: 80%;
+            margin: 6em 0 0 0;
+            background-color:hsla(287, 55%, 50%, 1 );
             color: white;
+            font-family: 'Darker Grotesque', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .welcomeHeaderTextBody{
+            text-align: center;
         }
         @keyframes slideMe  {
             0%{
-                transform: skewX(53deg) translateX(-500px);
+                transform: skewX(53deg) translateX(500px);
             }
             100%{
                 transform: skewX(0deg);
             }
         }
 
+
         .welcomeImg{
             width: 80%;
             height: 30vh;
             object-fit: cover;
             object-position: top;
+            margin-top: 3em;
         }
         .welcomeTextBody{
             margin-top: 3em;
@@ -443,7 +454,7 @@
         </form>
     </div>
     <div class="welcomeHeaderText">
-        <div class="welcomeHeaderTextBody">Meet Our Pastore</div>
+        <h1 class="welcomeHeaderTextBody"><span style="font-weight: 800">Meet Our</span> Pastor</h1>
     </div>
     <div class="welcomeImgContainer">
         <img class="welcomeImg" th:src="@{images/paster_firstlady.jpg}"/>
@@ -513,5 +524,6 @@
 </div>
 <div th:replace="fragments :: footer"></div>
 <div th:replace="fragments :: scripts"></div>
+<script th:src="@{/js/about.js}"></script>
 </body>
 </html>
