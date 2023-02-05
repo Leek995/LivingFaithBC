@@ -31,9 +31,9 @@
                 color: #373737;
 
             }
-            .footerHeading > a:link { text-decoration: none; color:#373737;}
-            .footerHeading > a{color: #373737;}
-            .footerHeading > a:visited { text-decoration: #373737; }
+            .footerHeading > a:link { text-decoration: none; color:white;}
+            .footerHeading > a{color: white;}
+            .footerHeading > a:visited { text-decoration: white; }
             .footerHeading > a:hover { text-decoration: black; }
             .footerHeading > a:active { text-decoration: none; }
             .footerHeading{
@@ -149,7 +149,7 @@
 <body>
 
     <div th:fragment="navbar">
-        <nav class="navbar navbar-expand-lg px-2">
+        <nav class="navbar navbar-expand-lg px-2 fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand mx-1" th:href="@{/}"><img th:src="@{/images/church_logo.jpg}" class="navbarLogo"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,7 +206,7 @@
                     <h6><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#373737" class="bi bi-map" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
                     </svg> Location</h6>
-                    <p>12033 Highway 6 , Fresno, TX, United States, Texas</p>
+                    <p style="color: white">12033 Highway 6 , Fresno, TX, United States, Texas</p>
 
                 </div>
                 <div class="footerHeading">
