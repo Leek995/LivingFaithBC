@@ -5,6 +5,56 @@
     .breadcrumb{
         margin-top: 6.3em;
     }
+    .aboutTitle{
+        display: flex;
+        justify-content: end;
+        transition: transform 1s;
+        /*animation: slideMe 2s ease-in;*/
+        border: none ;
+        -moz-border-radius-topright: 2px;
+        -moz-border-radius-bottomright: 2px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        padding: 1em;
+        width: 80%;
+        margin: 1em 0 0 0;
+        background-color:hsla(287, 55%, 50%, 1 );
+        color: white;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .aboutImgContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 0em auto auto;
+        width: 100%;
+    }
+    .aboutFigure{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 0em auto auto;
+        width: 100%;
+    }
+    .aboutCaption{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .aboutImg{
+        width: 80%;
+        height: 40vh;
+        object-fit: cover;
+    }
+    .aboutInfoRow{
+        margin-top: 3em;
+    }
 </style>
 <body>
 <div th:replace="fragments :: navbar"></div>
@@ -19,7 +69,22 @@
 </nav>
 
 <h1>About Page</h1>
-<div class="aboutContainer"></div>
+    <div class="aboutContainer">
+        <div class="aboutBanner">
+            <h1 class="aboutTitle">Pastor Johnson</h1>
+        </div>
+        <figure class="aboutFigure">
+            <img class="aboutImg" th:src="@{/images/pastor_johnson_headshot.jpg}"/>
+        </figure>
+        <figcaption class="aboutCaption">Biography</figcaption>
+        <div class="aboutInfoRow">
+            <div class="aboutInfoIcon"></div>
+            <div class="aboutInfoTextContainer">
+                <p class="aboutInfoTextBody">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid dolorum earum expedita labore nobis numquam veritatis? Alias, commodi sint!</p>
+                <p class="aboutSignature"></p>
+            </div>
+        </div>
+    </div>
 
 
 <div th:replace="fragments :: footer"></div>
