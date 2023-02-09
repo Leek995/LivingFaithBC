@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class DonationsController {
+public class StripeCreateCustomerController {
 
-    @GetMapping("/give")
-    public String showDonateForm(){
-        return "donations";
+    @GetMapping("/payments/create-customer")
+    public String showCreateCustomerForm(){
+        return "create-customer";
     }
 
-    @PostMapping("/give")
-    public String donateForm(){
+    @PostMapping("/payments/create-customer")
+    public String CreateCustomerForm(){
         return "donations";
     }
 }
