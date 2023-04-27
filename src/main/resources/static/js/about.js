@@ -2,7 +2,7 @@
     function renderAboutPastorInfo(){
         let html = '';
         html += '<div class="aboutBanner">\n' +
-            '        <h1 class="aboutTitle">Pastor Johnson</h1>\n' +
+            '        <h2 class="aboutTitle">Pastor Johnson</h2>\n' +
             '    </div>\n' +
             '    <div class="aboutImgContainer">\n' +
             '        <img class="aboutImg" src="../static/images/church_logo.jpg">\n' +
@@ -20,7 +20,7 @@
     function renderAboutFirstLadyHTML(){
         let html = '';
         html += '<div class="aboutBanner">\n' +
-            '        <h1 class="aboutTitle">First Lady Johnson</h1>\n' +
+            '        <h2 class="aboutTitle">First Lady Johnson</h2>\n' +
             '    </div>\n' +
             '    <div class="aboutImgContainer">\n' +
             '        <img class="aboutImg" src="../static/images/church_logo.jpg">\n' +

@@ -43,4 +43,8 @@ public class HomeController {
     public String devotionals(){
         return "devotionals";
     }
+    @GetMapping("/give")
+    public String give(){
+        return "give";
+    }
 }

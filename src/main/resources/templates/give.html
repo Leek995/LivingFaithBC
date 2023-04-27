@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments :: head"></head>
+<style>
+    .donations{
+        margin-top: 10em;
+        width: 100%;
+        height: 100vh;
+    }
+    .donationsForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .donationsInputContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        margin-bottom: 2em;
+    }
+    .donationsInput{
+        height: 3em;
+        width: 100%;
+    }
+    .donationsBtn{
+        height: 3em;
+        width: 100%;
+    }
+    .givelifyIcon{
+        /*margin-top: 10em;*/
+        width: 80%;
+    }
+    .divider{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .line{
+        width: 30%;
+        border: 1px lightgrey solid;
+    }
+    .dividerLine{
+        width: 10%;
+        margin: 0;
+        text-align: center;
+    }
+    .icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5em;
+        margin-top: 5em;
+    }
+    .aboutTitle{
+        display: flex;
+        justify-content: end;
+        transition: transform 1s;
+        /*animation: slideMe 2s ease-in;*/
+        border: none ;
+        -moz-border-radius-topright: 2px;
+        -moz-border-radius-bottomright: 2px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        padding: 1em;
+        width: 80%;
+        margin: 5em 0 3em 0;
+        background-color:hsla(287, 55%, 50%, 1 );
+        color: white;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .give{
+        border: 1px solid lightgrey;
+        padding: 1em;
+        width: 85%;
+        border-radius: 4px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 5em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
+
+</style>
+<body>
+<div th:replace="fragments :: navbar"></div>
+<h1>Donations Page</h1>
+<div class="aboutBanner">
+    <h1 class="aboutTitle">Give</h1>
+</div>
+<section class="give">
+    <a class="icon" target="_blank" href="https://givelify.com/givenow/1.0/MTUxMjkzMg==/selection"><img class="givelifyIcon" src="https://images.givelify.com/DarkGiveButton2xImg.png" alt="Givelify" /></a>
+    <div class="divider">
+        <div class="line"></div>
+        <p class="dividerLine">or</p>
+        <div class="line"></div>
+    </div>
+    <a class="icon" target="_blank" ><img class="cashAppIcon" th:src="@{/images/icons8-cashapp-instantly-send-money-between-friends-or-accept-card-payments-for-your-business-48.png}" src="" alt="Givelify" /></a>
+</section>
+
+<!--    <div class="donations">-->
+<!--        <form class="donationsForm">-->
+<!--            <h1 class="donationsHeader"></h1>-->
+<!--            <div class="donationsInputContainer">-->
+<!--                <input class="donationsInput" placeholder="username" disabled/>-->
+<!--            </div>-->
+<!--            <div class="donationsInputContainer">-->
+<!--                <input class="donationsInput" placeholder="password" type="password" disabled/>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <input type="checkbox" id="rememberMe" name="rememberMe">-->
+<!--                <label for="rememberMe">Remember me</label>-->
+<!--            </div>-->
+<!--            <div class="donationsInputContainer">-->
+<!--                <button class="donationsBtn">Sign-in</button>-->
+<!--            </div>-->
+<!--            <div class="donationsInputContainer">-->
+<!--                <a th:href="@{/payments/create-customer}">Create Account</a>-->
+<!--            </div>-->
+<!--            <p>or</p>-->
+<!--            <div class="donationsInputContainer">-->
+<!--                <button class="donationsBtn">Cash App</button>-->
+<!--            </div>-->
+
+<!--        </form>-->
+<!--    </div>-->
+<div th:replace="fragments :: footer"></div>
+<div th:replace="fragments :: scripts"></div>
+</body>
+</html>
