@@ -426,6 +426,10 @@
             border: none;
             box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         }
+        .modalPrayer{
+            border: none;
+            padding: 0;
+        }
 
 
 
@@ -568,16 +572,45 @@
                 </div>
             </div>
         </div>
-        <div class="infoCardBody2">
-            <h1 class="infoPrayer"><span style="font-weight: 800">Intercessory</span> Prayer</h1>
-            <div class="infoCardOverLay2">
-                <div class="infoPrayerContainer">
-                    <h5 class="infoPrayerHeading">Monday & Thursday</h5>
-                    <p class="infoPrayerText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem.</p>
-                </div>
+        <button type="button" disabled class="modalPrayer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="infoCardBody2">
+                <h1 class="infoPrayer"><span style="font-weight: 800">Intercessory</span> Prayer</h1>
+                <div class="infoCardOverLay2">
+                    <div class="infoPrayerContainer">
+                        <h5 class="infoPrayerHeading">Monday & Thursday</h5>
+                        <p class="infoPrayerText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem.</p>
+                    </div>
 
+                </div>
+            </div>
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Prayer Request</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-dark">Send</button>
+                    </div>
+                </div>
             </div>
         </div>
+<!--        <div class="infoCardBody2">-->
+<!--            <h1 class="infoPrayer"><span style="font-weight: 800">Intercessory</span> Prayer</h1>-->
+<!--            <div class="infoCardOverLay2">-->
+<!--                <div class="infoPrayerContainer">-->
+<!--                    <h5 class="infoPrayerHeading">Monday & Thursday</h5>-->
+<!--                    <p class="infoPrayerText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, exercitationem.</p>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
     </div>
     <div class="infoContainerSection">
         <div class="infoCardBody4">

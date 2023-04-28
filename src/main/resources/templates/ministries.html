@@ -5,10 +5,76 @@
     body{
         background-color: hsla(240, 3%, 94%, 1);
     }
+    .ministry{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .ministry{
+        position: relative;
+        height: 30vh;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .ministry::before{
+        content: "";
+        background-image: url('images/306186270_425210173100840_1532731442014597292_n.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        /*opacity: 0.6;*/
+    }
+    .ministryMessage {
+        position: relative;
+        color: #ffffff;
+        /*font-size: 14rem;*/
+        /*line-height: 0.9;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid white;
+        padding: 0.5em;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ministryMessageText{
+        position: relative;
+        color: white;
+        font-size: small;
+        background-color: hsla(287, 55%, 50%, 50% );
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ministryJoinBtn{
+        margin-left: auto;
+    }
 </style>
 <body>
 <div th:replace="fragments :: navbar"></div>
 <h1>Devotional Page</h1>
+<div class="ministry">
+        <div class="ministryMessageText">
+            <h1 class="ministryMessage">Men's Ministry</h1>
+            <button class="ministryJoinBtn">Join</button>
+        </div>
+</div>
+
 <div th:replace="fragments :: footer"></div>
 <div th:replace="fragments :: scripts"></div>
 </body>
