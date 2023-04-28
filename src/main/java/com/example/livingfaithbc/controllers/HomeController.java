@@ -47,4 +47,8 @@ public class HomeController {
     public String give(){
         return "give";
     }
+    @GetMapping("/ministries")
+    public String ministries(){
+        return "ministries";
+    }
 }
