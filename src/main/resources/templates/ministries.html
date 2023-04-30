@@ -5,23 +5,24 @@
     body{
         background-color: hsla(240, 3%, 94%, 1);
     }
-    .ministry{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
+    .ministryHeader{
+        margin-top: 4em;
+        text-align: center;
     }
+
     .ministry{
         position: relative;
-        height: 30vh;
-        width: 100%;
-
+        height: 40vh;
+        width: 90%;
+        margin-top: 4em;
+        margin-right: auto;
+        margin-left: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 
     }
     .ministry::before{
@@ -33,46 +34,87 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        /*opacity: 0.6;*/
     }
     .ministryMessage {
         position: relative;
-        color: #ffffff;
+        color: white;
         /*font-size: 14rem;*/
         /*line-height: 0.9;*/
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 3px solid white;
-        padding: 0.5em;
-        width: 60%;
+        /*border-bottom: 3px solid white;*/
+        padding-bottom: 0.5em;
+        /*width: 40%;*/
         margin-left: auto;
         margin-right: auto;
+        text-decoration: underline white;
     }
     .ministryMessageText{
         position: relative;
         color: white;
         font-size: small;
-        background-color: hsla(287, 55%, 50%, 50% );
+        background-color: hsla(287, 55%, 50%, 60% );
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: 0.5em;
     }
     .ministryJoinBtn{
         margin-left: auto;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        border: none;
+        padding: .5em;
+        width: 50px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .ministryInfo{
+        text-align: center;
+        padding: .5em;
     }
 </style>
 <body>
 <div th:replace="fragments :: navbar"></div>
-<h1>Devotional Page</h1>
-<div class="ministry">
+<h1 class="ministryHeader">Devotional Page</h1>
+<div class="ministry" style="">
         <div class="ministryMessageText">
             <h1 class="ministryMessage">Men's Ministry</h1>
+            <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
             <button class="ministryJoinBtn">Join</button>
         </div>
+</div>
+<div class="ministry">
+    <div class="ministryMessageText">
+        <h1 class="ministryMessage">Youth Ministry</h1>
+        <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
+        <button class="ministryJoinBtn">Join</button>
+    </div>
+</div>
+<div class="ministry">
+    <div class="ministryMessageText">
+        <h1 class="ministryMessage">Women's Ministry</h1>
+        <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
+        <button class="ministryJoinBtn">Join</button>
+    </div>
+</div>
+<div class="ministry">
+    <div class="ministryMessageText">
+        <h1 class="ministryMessage">Evangelistic Ministry</h1>
+        <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
+        <button class="ministryJoinBtn">Join</button>
+    </div>
+</div>
+<div class="ministry">
+    <div class="ministryMessageText">
+        <h1 class="ministryMessage">Homeless Ministry</h1>
+        <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
+        <button class="ministryJoinBtn">Join</button>
+    </div>
 </div>
 
 <div th:replace="fragments :: footer"></div>
