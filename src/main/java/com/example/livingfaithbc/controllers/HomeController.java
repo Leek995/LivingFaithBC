@@ -35,10 +35,10 @@ public class HomeController {
     public String about(){
         return "about";
     }
-    @GetMapping("/join")
-    public String join(){
-        return "join";
-    }
+//    @GetMapping("/join")
+//    public String join(){
+//        return "join";
+//    }
     @GetMapping("/devotionals")
     public String devotionals(){
         return "devotionals";

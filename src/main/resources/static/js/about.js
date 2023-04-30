@@ -5,7 +5,7 @@
             '        <h2 class="aboutTitle">Pastor Johnson</h2>\n' +
             '    </div>\n' +
             '    <div class="aboutImgContainer">\n' +
-            '        <img class="aboutImg" src="../static/images/church_logo.jpg">\n' +
+            '        <img class="aboutImg" src="../images/pastor_johnson_headshot.jpg"/>\n' +
             '    </div>\n' +
             '    <div class="aboutInfoRow">\n' +
             '        <div class="aboutInfoIcon"></div>\n' +
@@ -23,7 +23,7 @@
             '        <h2 class="aboutTitle">First Lady Johnson</h2>\n' +
             '    </div>\n' +
             '    <div class="aboutImgContainer">\n' +
-            '        <img class="aboutImg" src="../static/images/church_logo.jpg">\n' +
+            '        <img class="aboutImg" src="../images/church_logo.jpg"/>\n' +
             '    </div>\n' +
             '    <div class="aboutInfoRow">\n' +
             '        <div class="aboutInfoIcon"></div>\n' +

@@ -28,7 +28,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 4.25em;
+        margin-top: 4.10em;
 
     }
     .about::before{
@@ -66,6 +66,8 @@
     }
     .joinInfo{
         padding: 2em;
+        margin-bottom: 2em;
+        margin-top: 2em;
     }
     .joinMessage{
         background-color: hsla(287, 55%, 50%, 1 );
@@ -73,14 +75,16 @@
         color: white;
         font-size: large;
         text-align: center;
+
     }
     .joinFormTitle{
         text-align: center;
+        margin-top: 2em;
     }
     .joinFormInstructions{
         text-align: center;
         font-size: small;
-        margin-bottom: 3em;
+
     }
     .joinFormInputContainer{
         margin-right: auto;
@@ -134,24 +138,25 @@
 </div>
 <p class="joinInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur magni possimus praesentium sed similique. Architecto blanditiis cumque iste mollitia nisi porro quia quisquam rem repellat ut? Aperiam aspernatur consectetur eveniet facere in iusto molestias mollitia, nesciunt perferendis quibusdam? Accusamus accusantium at autem beatae commodi delectus doloribus dolorum enim eveniet ex, excepturi facere hic id, ipsa iure laborum libero maiores molestiae mollitia nisi nobis officia perferendis perspiciatis praesentium quam quia quo reiciendis, repellat sit temporibus ut velit veritatis vitae. Assumenda, voluptatibus?</p>
 <p class="joinMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-<form>
+<p class="joinInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur debitis doloribus eaque eius exercitationem labore ratione recusandae, sunt, temporibus tenetur vitae,</p>
+<form th:action="@{/join}" th:method="post" th:object="${joinF}">
     <h1 class="joinFormTitle">New Membership</h1>
     <p class="joinFormInstructions">To register, please take the time to fill out information below</p>
     <div class="joinFormInputContainer">
         <label class="joinFormInputLabel">First Name *</label>
-        <input class="joinFormInput" type="text">
+        <input class="joinFormInput" th:field="*{firstname}" type="text">
     </div>
     <div class="joinFormInputContainer">
         <label class="joinFormInputLabel">Last Name *</label>
-        <input class="joinFormInput"  type="text">
+        <input class="joinFormInput" th:field="*{lastname}"  type="text">
     </div>
     <div class="joinFormInputContainer">
         <label class="joinFormInputLabel">Email *</label>
-        <input class="joinFormInput"  type="email">
+        <input class="joinFormInput" th:field="*{email}" type="email">
     </div>
     <div class="joinFormInputContainer">
         <label class="joinFormInputLabel">Phone</label>
-        <input class="joinFormInput" type="number">
+        <input class="joinFormInput" th:field="*{phoneNumber}" type="text">
     </div>
     <button class="joinFormBtn">submit</button>
 </form>

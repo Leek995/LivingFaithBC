@@ -9,6 +9,13 @@
         margin-top: 4em;
         text-align: center;
     }
+    .ministrySubHeader{
+        text-align: center;
+        margin-top: 1.5em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .ministry{
         position: relative;
@@ -77,43 +84,103 @@
         text-align: center;
         padding: .5em;
     }
+
 </style>
 <body>
 <div th:replace="fragments :: navbar"></div>
-<h1 class="ministryHeader">Devotional Page</h1>
+<h1 class="ministryHeader">LFBC Fellowship & Ministry</h1>
+<p class="ministrySubHeader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consectetur deleniti deserunt dignissimos dolorum facere illo nesciunt odit officiis totam.</p>
+
 <div class="ministry" style="">
         <div class="ministryMessageText">
             <h1 class="ministryMessage">Men's Ministry</h1>
             <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
-            <button class="ministryJoinBtn">Join</button>
+            <button style="margin-left: auto; padding: .5em;" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Join
+            </button>
         </div>
 </div>
 <div class="ministry">
     <div class="ministryMessageText">
         <h1 class="ministryMessage">Youth Ministry</h1>
         <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
-        <button class="ministryJoinBtn">Join</button>
+        <button style="margin-left: auto; padding: .5em;" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Join
+        </button>
     </div>
 </div>
 <div class="ministry">
     <div class="ministryMessageText">
         <h1 class="ministryMessage">Women's Ministry</h1>
         <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
-        <button class="ministryJoinBtn">Join</button>
+        <button style="margin-left: auto; padding: .5em;" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Join
+        </button>
     </div>
 </div>
 <div class="ministry">
     <div class="ministryMessageText">
         <h1 class="ministryMessage">Evangelistic Ministry</h1>
         <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
-        <button class="ministryJoinBtn">Join</button>
+        <button style="margin-left: auto; padding: .5em;" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Join
+        </button>
     </div>
 </div>
-<div class="ministry">
+<div class="ministry" style="margin-bottom: 4em">
     <div class="ministryMessageText">
         <h1 class="ministryMessage">Homeless Ministry</h1>
         <p class="ministryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet fuga iure laboriosam natus possimus quo sequi ut veritatis voluptatem.</p>
-        <button class="ministryJoinBtn">Join</button>
+        <button style="margin-left: auto; padding: .5em;" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Join
+        </button>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Be apart of a ministry</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+<!--                    <span class="input-group-text" id="basic-addon1">First name</span>-->
+                    <input type="text" class="form-control" aria-label="Firstname" placeholder="First name" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+<!--                    <span class="input-group-text" id="basic-addon2">Last name</span>-->
+                    <input type="text" class="form-control" aria-label="Last name" placeholder="Last name" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-3">
+<!--                    <span class="input-group-text" id="basic-addon3">Email</span>-->
+                    <input type="text" class="form-control" aria-label="Email" placeholder="Email" aria-describedby="basic-addon3">
+                </div>
+                <div class="input-group mb-3">
+<!--                    <span class="input-group-text" id="basic-addon4">Phone</span>-->
+                    <input type="text" class="form-control" aria-label="Phone" placeholder="Phone" aria-describedby="basic-addon4">
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ministries</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Men's</a></li>
+                        <li><a class="dropdown-item" href="#">Youth</a></li>
+                        <li><a class="dropdown-item" href="#">Women's</a></li>
+                        <li><a class="dropdown-item" href="#">Evangelistic</a></li>
+                        <li><a class="dropdown-item" href="#">Homeless</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Submit</button>
+            </div>
+        </div>
     </div>
 </div>
 

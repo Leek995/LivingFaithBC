@@ -45,48 +45,47 @@
 
 <div th:replace="fragments :: footer"></div>
 <div th:replace="fragments :: scripts"></div>
-<!--<script>-->
-<!--    alert('Hi');-->
-<!--    fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ7mrrXNlZuTZwXIsJdx4Sg&maxResults=10&order=date&key=AIzaSyDzeMpnBVES7FZUReJdxajEmbN_c3Jn7EU')-->
-<!--        .then(data => data.json())-->
-<!--        .then(list => {-->
-<!--            $('.word').html(renderHTML(list));-->
-<!--        });-->
+<script>
+    fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCJ7mrrXNlZuTZwXIsJdx4Sg&maxResults=10&order=date&key=AIzaSyDzeMpnBVES7FZUReJdxajEmbN_c3Jn7EU')
+        .then(data => data.json())
+        .then(list => {
+            $('.word').html(renderHTML(list));
+        });
 
-<!--    function renderHTML(list){-->
-<!--        let html = '';-->
-<!--        for (let i = 0; i < list["items"].length; ++i){-->
-<!--            if(i === 0){-->
-<!--                html +=-->
-<!--                    '<div class="word">\n' +-->
-<!--                    `    <iframe class="sermonVideo" src="https://www.youtube.com/embed/${list["items"][i]["id"]["videoId"]}"></iframe>\n` +-->
-<!--                    `    <p>${list["items"][i]["snippet"]["title"]}</p>\n`+-->
-<!--                    `    <p>${list["items"][i]["snippet"]["description"]}</p>\n`+-->
-<!--                    '</div>\n'+-->
-<!--                    // `<p>${list["items"][i]["snippet"]["publishedAt"]}</p>\n`+-->
-<!--                    '<div class="aboutBanner">\n' +-->
-<!--                    '    <h1 class="aboutTitle" style="margin-bottom: 1em; margin-top: 2em">Recent Word</h1>\n' +-->
-<!--                    '</div>'-->
+    function renderHTML(list){
+        let html = '';
+        for (let i = 0; i < list["items"].length; ++i){
+            if(i === 0){
+                html +=
+                    '<div class="word">\n' +
+                    `    <iframe class="sermonVideo" src="https://www.youtube.com/embed/${list["items"][i]["id"]["videoId"]}"></iframe>\n` +
+                    `    <p>${list["items"][i]["snippet"]["title"]}</p>\n`+
+                    `    <p>${list["items"][i]["snippet"]["description"]}</p>\n`+
+                    '</div>\n'+
+                    // `<p>${list["items"][i]["snippet"]["publishedAt"]}</p>\n`+
+                    '<div class="aboutBanner">\n' +
+                    '    <h1 class="aboutTitle" style="margin-bottom: 1em; margin-top: 2em">Recent Word</h1>\n' +
+                    '</div>'
 
-<!--                continue;-->
-<!--            }-->
-<!--            html +=-->
-<!--                '<style>a{color: darkgray}</style>\n'+-->
-<!--                '<div class="word" style="width: 90%; margin: 0 auto 1em auto">\n' +-->
+                continue;
+            }
+            html +=
+                '<style>a{color: darkgray}</style>\n'+
+                '<div class="word" style="width: 90%; margin: 0 auto 1em auto">\n' +
 
-<!--                // `   <iframe class="sermonVideo" src="https://www.youtube.com/embed/${list["items"][i]["id"]["videoId"]}"></iframe>\n` +-->
-<!--                `<span><a href="https://www.youtube.com/embed/${list["items"][i]["id"]["videoId"]}"> ${list["items"][i]["snippet"]["title"]}</span></a>\n`+-->
-<!--                `<span> | ${list["items"][i]["snippet"]["description"]}</span>\n`+-->
-<!--                `<span> | ${list["items"][i]["snippet"]["publishedAt"].substring(5,10)}</span>\n`+-->
-<!--                '</div>'-->
-<!--        }-->
-<!--        return html;-->
-<!--    }-->
+                // `   <iframe class="sermonVideo" src="https://www.youtube.com/embed/${list["items"][i]["id"]["videoId"]}"></iframe>\n` +
+                `<span><a href="https://www.youtube.com/embed/${list["items"][i]["id"]["videoId"]}"> ${list["items"][i]["snippet"]["title"]}</span></a>\n`+
+                `<span> | ${list["items"][i]["snippet"]["description"]}</span>\n`+
+                `<span> | ${list["items"][i]["snippet"]["publishedAt"].substring(5,10)}</span>\n`+
+                '</div>'
+        }
+        return html;
+    }
 
-<!--</script>-->
+</script>
 
 
-<!--<script src="https://apis.google.com/js/api.js"></script>-->
+<script src="https://apis.google.com/js/api.js"></script>
 
 
 

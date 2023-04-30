@@ -594,11 +594,51 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <form>
+<!--                            <p class="prayFormInstructions">To register, please take the time to fill out information below</p>-->
+<!--                            <div class="prayerInputContainer">-->
+<!--                                <label class="prayerFormInputLabel">First Name</label>-->
+<!--                                <input class="prayerFormInput"  type="text">-->
+<!--                            </div>-->
+<!--                            <div class="prayerInputContainer">-->
+<!--                                <label class="prayerFormInputLabel">Last Name</label>-->
+<!--                                <input class="prayerFormInput"  type="text">-->
+<!--                            </div>-->
+<!--                            <div class="prayerFormInputContainer">-->
+<!--                                <label class="prayerFormInputLabel">Email</label>-->
+<!--                                <input class="prayerFormInput"  type="email">-->
+<!--                            </div>-->
+<!--                            <div class="prayerFormInputContainer">-->
+<!--                                <label class="prayerFormInputLabel">Email</label>-->
+<!--                                <textarea class="prayerFormInput"  type="text"></textarea>-->
+<!--                            </div>-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">First name</span>
+                                <input type="text" class="form-control" aria-label="Firstname" placeholder="First name" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon2">Last name</span>
+                                <input type="text" class="form-control" aria-label="Last name" placeholder="Last name" aria-describedby="basic-addon2">
+                            </div>
+                            <div class="input-group mb-3">
+<!--                                <span class="input-group-text" id="basic-addon3">Email</span>-->
+                                <input type="text" class="form-control" aria-label="Email" placeholder="Email" aria-describedby="basic-addon3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Please pray for</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Confidential
+                                </label>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-dark">Send</button>
+                        <button type="button" class="btn btn-secondary">Send</button>
                     </div>
                 </div>
             </div>
